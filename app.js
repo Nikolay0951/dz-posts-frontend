@@ -1,5 +1,5 @@
 import Http from './lib.js';
-const http = new Http('https://dashboard.heroku.com/apps/nikolay0951-api/deploy');
+const http = new Http('https://nikolay0951-api.herokuapp.com/');
 
 const rootEl = document.getElementById('root');
 const addEl = document.createElement('form');
