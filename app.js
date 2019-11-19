@@ -1,4 +1,5 @@
 import Http from './lib.js';
+const http = new Http('https://dashboard.heroku.com/apps/nikolay0951-api/deploy');
 
 const rootEl = document.getElementById('root');
 const addEl = document.createElement('form');
@@ -47,7 +48,7 @@ addEl.addEventListener('submit', (evt) => {
 const listEl = document.createElement('div');
 rootEl.appendChild(listEl);
 
-const http = new Http('http://localhost:9999');
+
 const rebuildList = (evt) => {
     const data = JSON.parse(evt.currentTarget.responseText);
     listEl.innerHTML = '';

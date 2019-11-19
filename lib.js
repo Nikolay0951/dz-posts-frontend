@@ -18,7 +18,6 @@ export default class Http {
         xhr.send();
     }
     postRequest(url, onSuccess, onError, body, headers) {
-        // if(data===null)
         const xhr = new XMLHttpRequest();
         xhr.open('POST', `${this.baseUrl}${url}`);
         for (const header of headers) {
